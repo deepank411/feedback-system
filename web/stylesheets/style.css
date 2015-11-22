@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'CoreCircusPierrot2';
+    src: url('../fonts/2DA5DD_0_0.eot');
+    src: url('../fonts/2DA5DD_0_0.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/2DA5DD_0_0.woff2') format('woff2'),
+         url('../fonts/2DA5DD_0_0.woff') format('woff'),
+         url('../fonts/2DA5DD_0_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Courgette';
+    src: url('../fonts/Courgette-Regular-webfont.eot');
+    src: url('../fonts/Courgette-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Courgette-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/Courgette-Regular-webfont.woff') format('woff'),
+         url('../fonts/Courgette-Regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face{
+   font-family: 'DaggerSquare';
+   src: url('../fonts/DAGGERSQUARE.otf');
+}
+
+@font-face{
+   font-family: 'DaggerSquareOblique';
+   src: url('../fonts/DAGGERSQUARE OBLIQUE.otf');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular-webfont.eot');
+    src: url('../fonts/Oswald-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Oswald-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/Oswald-Regular-webfont.woff') format('woff'),
+         url('../fonts/Oswald-Regular-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Bold-webfont.eot');
+    src: url('../fonts/Oswald-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Oswald-Bold-webfont.woff2') format('woff2'),
+         url('../fonts/Oswald-Bold-webfont.woff') format('woff'),
+         url('../fonts/Oswald-Bold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quantico';
+    src: url('../fonts/Quantico-Bold-webfont.eot');
+    src: url('../fonts/Quantico-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Quantico-Bold-webfont.woff2') format('woff2'),
+         url('../fonts/Quantico-Bold-webfont.woff') format('woff'),
+         url('../fonts/Quantico-Bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+   background: url('../images/bg_teaser.svg') center center;
+}
+/*.radio p{
+   display: inline-block;
+}*/
+
+
+.login-form-text{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  font-family: DaggerSquare;
+}
+.login-form-text-2{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  font-family: Quantico;
+}
+.login-form-text-3{
+  /*text-transform: uppercase;*/
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  font-family: Oswald;
+}
+.login-form-text-4{
+  /*text-transform: uppercase;*/
+  /*letter-spacing: 2px;*/
+  font-size: 1.3rem;
+  font-family: Oswald;
+}
+.login-form-text-5{
+  /*text-transform: uppercase;*/
+  /*letter-spacing: 1px;*/
+  font-size: 1rem;
+  font-family: DaggerSquare;
+}
+
+.input-field label {
+   color: #26a69a;
+}
+.input-field input[type=text]{
+   color: #26a69a;
+}
+.input-field input[type=text]:focus + label {
+   color: #26a69a;
+}
+label{
+   color: #0000ff;
+}
+.fill-button{
+   margin-top: 10px;
+}
+.row.heading{
+   font-weight: bold;
+   font-size: 1.5rem;
+   font-family: Oswald;
+
+}
+.row.text{
+   font-size: 1.2rem;
+   font-family: Oswald;
+}
+.title{
+   font-family: Oswald;
+}
+.chip.edit{
+   color: #fff;
+   background-color: #26a69a;
+   font-family: Quantico;
+   font-size: 1rem;
+}
+.chip.delete {
+   color: #fff;
+   background-color: #d8583a;
+   font-family: Quantico;
+   font-size: 1rem;
+}
+.brand-logo{
+    margin-left: 10px;
+}
