@@ -1,4 +1,4 @@
-<%-- 
+<%--
     Document   : adminhome
     Created on : 7 Nov, 2015, 8:58:10 PM
     Author     : abdul
@@ -14,21 +14,21 @@
    <title>Admin | Home</title>
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
    rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+   <link rel="stylesheet" href="materialize/css/materialize.min.css">
    <link rel="stylesheet" href="./stylesheets/style.css">
    <link rel="stylesheet" href="./stylesheets/global.css">
-   
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
+
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
         <script type="text/javascript" >
-            
+
             function actFun() {
-                 var val=1; 
+                 var val=1;
                 var dataString = 'val=' + val;
-             
+
 
         // AJAX code to submit form.
                     $.ajax({
-                      
+
                         type: "POST",
                         url: "activatefeedback.jsp",
                         data: dataString,
@@ -39,15 +39,15 @@
                     });
                 return false;
             }
-            
+
             function deactFun() {
-                 var val=0; 
+                 var val=0;
                 var dataString = 'val=' + val;
-             
+
 
         // AJAX code to submit form.
                     $.ajax({
-                      
+
                         type: "POST",
                         url: "activatefeedback.jsp",
                         data: dataString,
@@ -81,9 +81,9 @@
          <div>
       </div>
     <div class="row"  style="font-size: 0.8em;">
-         
-<%      
-    
+
+<%
+
         int flag,flag1,flag2;
         flag=FlagHandler.getFeedStart();
         flag2=FlagHandler.getFeedOver();
@@ -109,7 +109,7 @@
         else if( flag==1){
             if(flag2==1){
                 out.print("<div class=\"col s4\">");
-                out.print("<a href=\"question-page.html\" class=\"btn waves-effect waves-light indigo darken-4\">Generate Report</a>");
+                out.print("<a href=\"faculty-home.html\" class=\"btn waves-effect waves-light indigo darken-4\">Generate Report</a>");
                 out.print("</div>");
             }
             else{
@@ -117,15 +117,15 @@
                 out.print("<p>Feed back process is not over yet </p>");
                 out.print("<button  class=\"btn waves-effect waves-light indigo darken-4\"  onclick=\"deactFun()\"   >Deactiviate Feedback</button>");
                 out.print("</div>");
-                   
+
             }
         }
    %>
-        
+
    </div>
 </div>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+   <script src="materialize/js/materialize.min.js"></script>
    <script src="./js/scripts.js"></script>
 </body>
 </html>

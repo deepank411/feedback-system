@@ -16,7 +16,7 @@
    <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Question List | Feedback System</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+   <link rel="stylesheet" href="materialize/css/materialize.min.css">
    <link rel="stylesheet" href="./stylesheets/style.css">
    <link rel="stylesheet" href="./stylesheets/global.css">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -178,7 +178,7 @@
                 });
             </script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+   <script src="materialize/js/materialize.min.js"></script>
    <script src="./js/scripts.js"></script>
 </body>
 </html>

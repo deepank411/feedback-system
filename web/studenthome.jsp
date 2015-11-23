@@ -32,7 +32,7 @@
    <title>Courses | Feedback</title>
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
    rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+   <link rel="stylesheet" href="materialize/css/materialize.min.css">
    <link rel="stylesheet" href="./stylesheets/style.css">
    <link rel="stylesheet" href="./stylesheets/global.css">
 </head>
@@ -118,7 +118,7 @@
  
   
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+   <script src="materialize/js/materialize.min.js"></script>
    <script src="./js/scripts.js"></script>
 </body>
 </html>

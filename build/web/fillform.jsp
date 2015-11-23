@@ -34,7 +34,7 @@ int qno;
    <title>Feedback Form</title>
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
    rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+   <link rel="stylesheet" href="materialize/css/materialize.min.css">
    <link rel="stylesheet" href="./stylesheets/style.css">
    <link rel="stylesheet" href="./stylesheets/global.css">
    
@@ -129,10 +129,7 @@ int qno;
 
             <div class="row">
                <div class="col s6 center">
-                   <%
-                        out.print("<button class=\"btn waves-effect waves-light col s12 indigo darken-4\" onclick=\"subform('"+qno+"')\">Save</button>");
-                   %>
-                  <!--<button class="btn waves-effect waves-light col s12 indigo darken-4" onclick="subform()">Save</button>-->
+                   <a href="error.html" class="btn waves-effect waves-light col s12 indigo darken-4">Submit</a>
                </div>
 <!--               <div class="col s4 center">
                   <button onclick="document.getElementById('myForm').reset();" class="btn waves-effect waves-light col s12 indigo darken-4">Reset</button>
@@ -145,7 +142,7 @@ int qno;
       </div>
    </div>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+   <script src="materialize/js/materialize.min.js"></script>
    <script src="./js/scripts.js"></script>
    <script>
        function subform(qno){

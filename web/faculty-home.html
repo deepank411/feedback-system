@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Courses | Feedback</title>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+   rel="stylesheet">
+   <link rel="stylesheet" href="materialize/css/materialize.min.css">
+   <link rel="stylesheet" href="./stylesheets/style.css">
+   <link rel="stylesheet" href="./stylesheets/global.css">
+</head>
+<body class="blue lighten-2">
+   <nav class="indigo darken-4">
+      <div class="nav-wrapper">
+         <a href="#!" class="brand-logo">Logo</a>
+         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+         <ul class="right hide-on-med-and-down">
+            <li><a href="login.html">Login</a></li>
+         </ul>
+         <ul class="side-nav" id="mobile-demo">
+            <li><a href="login.html">Login</a></li>
+         </ul>
+      </div>
+   </nav><br>
+   <div class="container ">
+		<div class="card-panel form-container">
+      <div class="row heading">
+         <div class="col s12 center">
+            <p>FACULTY HOME</p>
+         </div>
+      </div>
+                    <div class="row text">
+                        <div class="col s12">
+                            <p>The average of the responses received is shown in the following pie chart.</p>   
+                        </div>
+                    </div>
+      <div class="center" id="chart"></div>
+   </div>
+</div>
+   <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+   <script src="materialize/js/materialize.min.js"></script>
+   <script src="./js/scripts.js"></script>
+   <script>
+       var w = 400;
+var h = 400;
+var r = h/2;
+var color = d3.scale.category20c();
+
+var data = [{"label":"1", "value":25}, 
+		          {"label":"2", "value":15}, 
+		          {"label":"3", "value":30},
+                      {"label":"4", "value":20},
+                  {"label":"5", "value":10}];
+
+
+var vis = d3.select('#chart').append("svg:svg").data([data]).attr("width", w).attr("height", h).append("svg:g").attr("transform", "translate(" + r + "," + r + ")");
+var pie = d3.layout.pie().value(function(d){return d.value;});
+
+// declare an arc generator function
+var arc = d3.svg.arc().outerRadius(r);
+
+// select paths, use arc generator to draw
+var arcs = vis.selectAll("g.slice").data(pie).enter().append("svg:g").attr("class", "slice");
+arcs.append("svg:path")
+    .attr("fill", function(d, i){
+        return color(i);
+    })
+    .attr("d", function (d) {
+        // log the result of the arc generator to show how cool it is :)
+        console.log(arc(d));
+        return arc(d);
+    });
+
+// add the text
+arcs.append("svg:text").attr("transform", function(d){
+			d.innerRadius = 0;
+			d.outerRadius = r;
+    return "translate(" + arc.centroid(d) + ")";}).attr("text-anchor", "middle").text( function(d, i) {
+    return data[i].label;}
+		);
+        </script>
+</body>
+</html>
