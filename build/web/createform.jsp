@@ -65,7 +65,7 @@
                         data: dataString,
                         cache: false,
                         success: function (html) {
-                            alert(html);
+                            //alert(html);
                         }
                     });
                 }
@@ -156,7 +156,7 @@
                   </div>
                   <div class="row">
                             <div class="col s6">
-                               <div class="center"><input type="button" name="addq" id="addq" class="modal-action modal-close btn indigo darken-4 hidemodal"  tabindex="3" value="add"  onclick="myf()"></div><br>
+                               <div class="center"><input type="button" name="addq" id="addq" class="modal-action modal-close btn indigo darken-4 hidemodal"  tabindex="3" value="add"  onclick="myf(); Materialize.toast('New Question added.', 4000)"></div><br>
                             </div>
                             <div class="col s6">
                                <div class="center"><input type="button" name="cancel" id="cancel" class="modal-action modal-close btn indigo darken-4 hidemodal" value="cancel" tabindex="4"></div>

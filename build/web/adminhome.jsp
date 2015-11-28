@@ -34,7 +34,7 @@
                         data: dataString,
                         cache: false,
                         success: function (html) {
-                            alert(html);
+                            //alert(html);
                         }
                     });
                 return false;
@@ -53,7 +53,7 @@
                         data: dataString,
                         cache: false,
                         success: function (html) {
-                            alert(html);
+                            //alert(html);
                         }
                     });
                 return false;
@@ -102,7 +102,7 @@
                 out.print("<a href=\"createform.jsp\" class=\"btn waves-effect waves-light indigo darken-4\">Edit Form</a>");
                 out.print("</div>");
                 out.print("<div class=\"col s4\">");
-                out.print("<button  class=\"btn waves-effect waves-light indigo darken-4\"  onclick=\"actFun()\"   >Activate Feedback</button>");
+                out.print("<button  class=\"btn waves-effect waves-light indigo darken-4\"  onclick=\"actFun();Materialize.toast('Feedback process active.', 4000)\"   >Activate Feedback</button>");
                 out.print("</div>");
             }
         }
@@ -115,7 +115,7 @@
             else{
                 out.print("<div class=\"col s12\">");
                 out.print("<p>Feed back process is not over yet </p>");
-                out.print("<button  class=\"btn waves-effect waves-light indigo darken-4\"  onclick=\"deactFun()\"   >Deactiviate Feedback</button>");
+                out.print("<button  class=\"btn waves-effect waves-light indigo darken-4\"  onclick=\"deactFun();Materialize.toast('Feedback process deactivated.', 4000)\"   >Deactiviate Feedback</button>");
                 out.print("</div>");
 
             }

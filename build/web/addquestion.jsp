@@ -13,11 +13,11 @@
     q.setQ_type(request.getParameter("qtype").charAt(0));
     int flag;
     flag=Form.addQues(q);
-    if(flag!=-1){
-        out.print("Question added successfully!");
-    }
-    else
-        out.print("Error in adding question.");
+//    if(flag!=-1){
+//        out.print("Question added successfully!");
+//    }
+//    else
+//        out.print("Error in adding question.");
 
 
 
